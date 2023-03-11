@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Stat from "./Stat";
-import data from "../public/data.json";
+import data from "./data.json";
 
 function App() {
   //State to store the data
