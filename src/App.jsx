@@ -6,7 +6,7 @@ function App() {
   const [stats, setStats] = useState(null);
   //Fetch data
   function fetchData() {
-    fetch("./data.json")
+    fetch("../public/data.json")
       .then((res) => res.json())
       .then((data) => setStats(data));
   }
