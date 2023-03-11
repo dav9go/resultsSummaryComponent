@@ -1,18 +1,13 @@
 import { useState, useEffect } from "react";
 import Stat from "./Stat";
+import data from "../public/data.json";
 
 function App() {
   //State to store the data
   const [stats, setStats] = useState(null);
-  //Fetch data
-  function fetchData() {
-    fetch("../public/data.json")
-      .then((res) => res.json())
-      .then((data) => setStats(data));
-  }
 
   useEffect(() => {
-    fetchData();
+    setStats(data);
   }, [stats]);
 
   return (
