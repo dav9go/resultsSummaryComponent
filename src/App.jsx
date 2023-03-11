@@ -4,8 +4,9 @@ import Stat from "./Stat";
 function App() {
   //State to store the data
   const [stats, setStats] = useState(null);
+  //Fetch data
   function fetchData() {
-    fetch("../data.json")
+    fetch("./data.json")
       .then((res) => res.json())
       .then((data) => setStats(data));
   }
